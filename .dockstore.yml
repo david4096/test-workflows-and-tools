@@ -1,11 +1,14 @@
 version: 1.2
 tools:
-   - subclass: cwl
+   - name: test12
+     subclass: cwl
      primaryDescriptorPath: /tools/Dockstore.cwl
-   - subclass: wdl
+   - name: test34
+     subclass: wdl
      primaryDescriptorPath: /tools/Dockstore.wdl
      name: wdl
 workflows:
-   - subclass: cwl
+   - name: test34
+     subclass: cwl
      primaryDescriptorPath: /workflows/HelloWorld.cwl
      publish: true
